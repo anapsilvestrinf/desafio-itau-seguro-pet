@@ -63,9 +63,10 @@ O relatório de cobertura de código pode ser obtido utilizando o Jacoco. Para g
 ```
 
 # Arquitetura
-A solução segue princípios de Clean Architecture, onde se busca separar as responsabilidades  as camadas de forma a proteger o domínio da aplicação. O padrão de adapter é utilizado para isolar mudanças na API de geolocalização, garantindo que a substituição dessa API não afete o funcionamento da aplicação, principalmente as regras de negócio.
+A solução segue princípios de Clean Architecture, onde se busca separar as camadas de forma a proteger o domínio da aplicação. O padrão de adapter é utilizado para isolar mudanças na API de geolocalização, garantindo que a substituição dessa API não afete o funcionamento da aplicação, principalmente as regras de negócio.
 
-Assumi que não seria necessário utilizar um banco de dados, pois no escopo da solução original não foi especificado o uso de banco, bem como não está desenhado na solução. Além disso, os campos que eventualmente precisariam ser persistidos aparecem em outra parte da solução.
+Assumi que não seria necessário utilizar um banco de dados, pois não foi especificado o uso de banco no escopo do desafio, bem como não está desenhado na solução. Além disso, os campos que eventualmente precisariam ser persistidos aparecem em outra parte do desenho da solução.
+
 # Observabilidade
 Embora a integração com Datadog tenha sido desabilitada, as configurações de captura de métricas foram adicionadas nas propriedades.
 
